@@ -543,6 +543,9 @@ h4 {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
   margin-bottom: 67px;
 }
 
@@ -601,4 +604,63 @@ h4 {
 
   font-weight: 500;
   color: #5d5dff;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__general-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 64px;
+  margin-bottom: 6px;
+}
+
+.general-info__about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about-us__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+}
+
+.contacts__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: start;
+}
+
+.contacts__connection-ways {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 48px;
+}
+
+.connection-ways__partitions {
+  display: flex;
+  gap: 80px;
+}
+
+.partitions__products,
+.partitions__resources,
+.partitions__company {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+}
+
+.connection-ways__messengers {
+  display: flex;
+  gap: 16px;
 }
