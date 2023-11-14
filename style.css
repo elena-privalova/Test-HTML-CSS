@@ -68,10 +68,20 @@ header {
   color: #5d5dff;
 }
 
+.buttons__sign-in:hover {
+  color: #ffffff;
+}
+
 .buttons__sign-up {
   border-radius: 2px;
   background-color: #5d5dff;
   color: #ffffff;
+}
+
+.buttons__sign-up:hover,
+.buttons__start:hover,
+.buttons__minus:hover {
+  background-color: #4b4acf;
 }
 
 section {
@@ -180,6 +190,10 @@ h4 {
   background-color: #33363a;
 }
 
+.buttons__learn:hover {
+  background-color: #55595f;
+}
+
 .intro__wrap {
   width: auto;
   margin-right: 125px;
@@ -211,6 +225,10 @@ h4 {
   border: none;
   border-radius: 50%;
   background-color: #ebf1f5;
+}
+
+.content__play-button:hover {
+  background-color: #d9e3ea;
 }
 
 .content__video {
@@ -269,6 +287,10 @@ h4 {
   color: #36a269;
 
   background-color: #c6f6d5;
+}
+
+.examples__button:hover {
+  background-color: #add8bb;
 }
 
 .examples__instance {
@@ -357,6 +379,10 @@ h4 {
   background-color: #55595f;
 }
 
+.buttons__arrows:hover {
+  background-color: #33363a;
+}
+
 .buttons__minus {
   width: 64px;
   background-color: #5d5dff;
@@ -365,6 +391,10 @@ h4 {
 .buttons__plus {
   width: 40px;
   background-color: #36a269;
+}
+
+.buttons__plus:hover {
+  background-color: #48bb78;
 }
 
 .ui-1__tasks {
@@ -883,6 +913,10 @@ h4 {
   border: 1px solid #33363a;
 }
 
+.tasks__next-btn > img {
+  cursor: pointer;
+}
+
 .ui-1__options,
 .ui-2__options {
   align-self: flex-end;
@@ -1017,6 +1051,10 @@ h4 {
   justify-content: space-between;
 }
 
+.enter__button:hover {
+  background-color: #d9e3ea;
+}
+
 .contacts__general-info {
   display: flex;
   flex-direction: column;
@@ -1039,6 +1077,7 @@ h4 {
 }
 
 .contacts__text {
+  cursor: pointer;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
