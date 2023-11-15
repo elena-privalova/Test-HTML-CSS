@@ -7,7 +7,7 @@
     <title>HTML | CSS L1</title>
   </head>
   <body>
-    <header class="header">
+    <header class="general-header">
       <img class="logo" src="/assets/logo.png" alt="Logo image" />
       <div class="buttons">
         <button class="buttons__sign-in">Sign in</button>
@@ -137,8 +137,8 @@
         </div>
       </section>
 
-      <section class="section examples">
-        <button class="examples__button">Reach goals that matter</button>
+      <section class="section promo">
+        <button class="promo__button">Reach goals that matter</button>
         <h2 class="title title-2">One product, unlimited solutions</h2>
         <p class="caption">
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -146,13 +146,13 @@
           deserunt mollit laborum — semper quis lectus nulla.
         </p>
 
-        <section class="section examples__instance instance">
-          <div class="instance__definition definition">
-            <span class="text definition__lozung">More speed. Less spend</span>
-            <h3 class="definition__capture title title-3">
+        <section class="section example">
+          <div class="example__definition definition">
+            <span class="definition__lozung text">More speed. Less spend</span>
+            <h3 class="definition__title title title-3">
               Keep projects on schedule
             </h3>
-            <p class="text--start caption">
+            <p class="caption text--start">
               Lorem ipsum dolor sit amet, consectetur adipiscing<br />
               elit, sed do eiusmod tempor incididunt ut labore et<br />
               dolore magna aliqua.
@@ -166,9 +166,9 @@
             </ul>
           </div>
 
-          <div class="instance__ui ui-1">
-            <div class="ui-1__header">
-              <div class="header__user user">
+          <div class="example__interface interface interface-1">
+            <div class="interface__header ui-header">
+              <div class="ui-header__user user">
                 <img src="/assets/avatar.png" alt="Avatar" />
                 <div class="user__arrows--vertical">
                   <img src="assets/arrow-up.svg" alt="Arrow up" />
@@ -176,7 +176,7 @@
                 </div>
               </div>
 
-              <div class="header__buttons buttons">
+              <div class="ui-header__buttons buttons">
                 <button class="buttons__arrows">
                   <img src="/assets/arrow_left.svg" alt="Arrow left" />
                   <img src="/assets/arrow-right.svg" alt="Arrow right" />
@@ -190,10 +190,10 @@
               </div>
             </div>
 
-            <div class="ui-1__tasks tasks">
+            <div class="interface-1__tasks tasks">
               <div class="tasks__item item">
                 <div class="item__labels labels">
-                  <input class="labels__checkbox" id="item1" type="checkbox" />
+                  <input class="labels__checkbox" type="checkbox" />
                   <img src="/assets/labels-icon1.png" alt="Labels icon" />
                   <span class="labels__text">page_description</span>
                 </div>
@@ -201,7 +201,7 @@
                 <div class="item__badges badges">
                   <span class="badges__number number">
                     <img
-                      class="number__forth"
+                      class="number__icon"
                       src="/assets/4.svg"
                       alt="4 icon"
                     />
@@ -311,16 +311,16 @@
               </div>
             </div>
 
-            <div class="ui-1__options">
+            <div class="interface__options">
               <img src="/assets/options.svg" alt="Options icon" />
             </div>
           </div>
         </section>
 
-        <section class="section examples__instance instance">
-          <div class="instance__ui ui-2">
-            <div class="ui-2__header">
-              <div class="header__user user">
+        <section class="section example">
+          <div class="example__interface interface interface-2">
+            <div class="interface__header ui-header">
+              <div class="ui-header__user user">
                 <img src="/assets/avatar.png" alt="Avatar" />
                 <div class="user__arrows--vertical">
                   <img src="assets/arrow-up.svg" alt="Arrow up" />
@@ -328,7 +328,7 @@
                 </div>
               </div>
 
-              <div class="header__buttons buttons">
+              <div class="ui-header__buttons buttons">
                 <button class="buttons__arrows">
                   <img src="/assets/arrow_left.svg" alt="Arrow left" />
                   <img src="/assets/arrow-right.svg" alt="Arrow right" />
@@ -342,18 +342,18 @@
               </div>
             </div>
 
-            <div class="ui-2__tasks tasks">
-              <div class="tasks__rows rows">
-                <span class="rows__item"></span>
-                <span class="rows__item"></span>
-                <span class="rows__item"></span>
-                <span class="rows__item"></span>
-                <span class="rows__item"></span>
-                <span class="rows__item"></span>
-                <span class="rows__item"></span>
+            <div class="interface-2__background ui-background">
+              <div class="ui-background__wrap">
+                <span class="ui-background__item"></span>
+                <span class="ui-background__item"></span>
+                <span class="ui-background__item"></span>
+                <span class="ui-background__item"></span>
+                <span class="ui-background__item"></span>
+                <span class="ui-background__item"></span>
+                <span class="ui-background__item"></span>
               </div>
 
-              <div class="tasks__shapes shapes">
+              <div class="interface-2__shapes shapes">
                 <div class="shapes__rectangle rectangle rectangle-1">
                   <img src="/assets/r-icon1.svg" alt="Rectangle icon" />
                   <span class="text rectangle__text">Aliqua</span>
@@ -363,18 +363,22 @@
                     alt="Directs icon"
                   />
                 </div>
+
                 <div class="shapes__oval oval oval--green">
                   <span class="oval__circle"></span>
                   <span class="text oval__text">Leo Walter</span>
                 </div>
+
                 <div class="shapes__rectangle rectangle rectangle-2">
                   <img src="/assets/r-icon2.svg" alt="Rectangle icon" />
                   <span class="text rectangle__text">Desktop</span>
                 </div>
+
                 <div class="shapes__rectangle rectangle rectangle-3">
                   <img src="/assets/r-icon3.svg" alt="Rectangle icon" />
                   <span class="text rectangle__text">Mobile</span>
                 </div>
+
                 <div class="shapes__rectangle rectangle rectangle-4">
                   <img src="/assets/r-icon4.svg" alt="Rectangle icon" />
                   <span class="text rectangle__text">Exercitation</span>
@@ -384,44 +388,47 @@
                     alt="Dotes icon"
                   />
                 </div>
+
                 <div class="shapes__oval oval oval--blue">
                   <span class="oval__circle"></span>
                   <span class="text oval__text">Patrick Sharma</span>
                 </div>
+
                 <div class="shapes__rectangle rectangle rectangle-5">
                   <img src="/assets/r-icon5.svg" alt="Rectangle icon" />
                   <span class="text rectangle__text">Online</span>
                 </div>
+
+                <img class="shapes__angle angle-1" src="/assets/angle1-2.svg" />
+                <img class="shapes__angle angle-2" src="/assets/angle2-3.svg" />
+                <img class="shapes__angle angle-3" src="/assets/angle3-4.svg" />
+                <img class="shapes__angle angle-4" src="/assets/angle4-5.svg" />
+
+                <img class="shapes__bind bind-1" src="/assets/bind.svg" />
+                <img class="shapes__bind bind-2" src="/assets/bind.svg" />
+
+                <img class="shapes__bind bind-3" src="/assets/bind.svg" />
+                <img class="shapes__bind bind-4" src="/assets/bind.svg" />
+
+                <img class="shapes__bind bind-5" src="/assets/bind.svg" />
+                <img class="shapes__bind bind-6" src="/assets/bind.svg" />
+
+                <img class="shapes__bind bind-7" src="/assets/bind.svg" />
+                <img class="shapes__bind bind-8" src="/assets/bind.svg" />
               </div>
-
-              <img class="tasks__angle angle-1" src="/assets/angle1-2.svg" />
-              <img class="tasks__bind bind-1" src="/assets/bind.svg" />
-              <img class="tasks__bind bind-2" src="/assets/bind.svg" />
-
-              <img class="tasks__angle angle-2" src="/assets/angle2-3.svg" />
-              <img class="tasks__bind bind-3" src="/assets/bind.svg" />
-              <img class="tasks__bind bind-4" src="/assets/bind.svg" />
-
-              <img class="tasks__angle angle-3" src="/assets/angle3-4.svg" />
-              <img class="tasks__bind bind-5" src="/assets/bind.svg" />
-              <img class="tasks__bind bind-6" src="/assets/bind.svg" />
-
-              <img class="tasks__angle angle-4" src="/assets/angle4-5.svg" />
-              <img class="tasks__bind bind-7" src="/assets/bind.svg" />
-              <img class="tasks__bind bind-8" src="/assets/bind.svg" />
             </div>
 
-            <div class="ui-2__options">
+            <div class="interface__options">
               <img src="/assets/options.svg" alt="Options icon" />
             </div>
           </div>
 
-          <div class="instance__definition definition">
+          <div class="example__definition definition">
             <span class="text definition__lozung">More speed. Less spend</span>
             <h3 class="definition__capture title title-3">
               Keep projects on schedule
             </h3>
-            <p class="text--start caption">
+            <p class="caption text--start">
               Lorem ipsum dolor sit amet, consectetur adipiscing<br />
               elit, sed do eiusmod tempor incididunt ut labore et<br />
               dolore magna aliqua.
@@ -436,13 +443,13 @@
           </div>
         </section>
 
-        <section class="section examples__instance instance">
-          <div class="instance__definition definition">
+        <section class="section example">
+          <div class="example__definition definition">
             <span class="text definition__lozung">More speed. Less spend</span>
             <h3 class="definition__capture title title-3">
               Keep projects on schedule
             </h3>
-            <p class="text--start caption">
+            <p class="caption text--start">
               Lorem ipsum dolor sit amet, consectetur adipiscing<br />
               elit, sed do eiusmod tempor incididunt ut labore et<br />
               dolore magna aliqua.
@@ -456,9 +463,9 @@
             </ul>
           </div>
 
-          <div class="instance__ui ui-3">
-            <div class="ui-3__header">
-              <div class="header__user user">
+          <div class="example__interface interface interface-3">
+            <div class="interface__header ui-header">
+              <div class="ui-header__user user">
                 <img src="/assets/avatar.png" alt="Avatar" />
                 <div class="user__arrows--vertical">
                   <img src="assets/arrow-up.svg" alt="Arrow up" />
@@ -466,7 +473,7 @@
                 </div>
               </div>
 
-              <div class="header__buttons buttons">
+              <div class="ui-header__buttons buttons">
                 <button class="buttons__arrows">
                   <img src="/assets/arrow_left.svg" alt="Arrow left" />
                   <img src="/assets/arrow-right.svg" alt="Arrow right" />
@@ -480,81 +487,87 @@
               </div>
             </div>
 
-            <div class="ui-3__tasks tasks">
-              <div class="tasks__row-container row-container">
-                <div class="row-container__sample sample-1">
-                  <div class="sample-1__icons icons">
-                    <span class="icons__circle circle--blue"></span>
+            <div class="interface-3__wrap">
+              <div class="interface-3__container ui-container">
+                <div class="ui-container__row row-1">
+                  <div class="row-1__wrap row-wrap">
+                    <span class="row-wrap__circle circle--blue"></span>
                     <img src="/assets/circles.svg" alt="Circles icon" />
                   </div>
-                  <div class="sample-1__filling filling">
+                  <div class="row-1__filling filling">
                     <span class="filling__circle circle--green"></span>
                     <span class="text filling__text">Mobile Design</span>
                   </div>
                 </div>
 
-                <div class="row-container__sample sample-2">
-                  <div class="sample-2__avatars avatars">
+                <div class="ui-container__row row-2">
+                  <div class="row-2__avatars avatars">
                     <img
-                      class="avatars__avatar--left"
+                      class="avatars__image--left"
                       src="/assets/avatar1.png"
                       src="Avatar icon"
                     />
                     <img
-                      class="avatars__avatar--right"
+                      class="avatars__image--right"
                       src="/assets/avatar2.png"
                       src="Avatar icon"
                     />
                   </div>
-                  <div class="sample-2__icons icons">
-                    <span class="icons__circle circle--yellow"></span>
+                  <div class="row-2__wrap row-wrap">
+                    <span class="row-wrap__circle circle--yellow"></span>
                     <img src="/assets/graph.svg" alt="Graph icon" />
                   </div>
                 </div>
 
-                <div class="row-container__sample sample-3">
-                  <div class="sample-3__general-wrap general-wrap">
+                <div class="ui-container__row row-3">
+                  <div class="row-3__wrap row-container">
                     <img src="/assets/avatar3.png" />
-                    <div class="general-wrap__circle-wrap circle-wrap">
-                      <span class="circle-wrap__instance instance--red"></span>
+                    <div class="row-container__wrap circle-wrap">
+                      <span class="circle-wrap__instance circle--red"></span>
                     </div>
                   </div>
-                  <div class="sample-3__icon-wrap">
+                  <div class="row-3__icon-wrap">
                     <img src="/assets/leaf.svg" alt="Leaf icon" />
                   </div>
                 </div>
 
-                <div class="row-container__sample sample-4">
-                  <div class="sample-4__filling filling">
+                <div class="ui-container__row row-4">
+                  <div class="row-4__filling filling">
                     <span class="filling__circle circle--red"></span>
                     <span class="text filling__text">Integration</span>
                   </div>
-                  <div class="sample-4__icons icons">
-                    <span class="icons__circle circle--blue"></span>
+                  <div class="row-4__wrap row-wrap">
+                    <span class="row-wrap__circle circle--blue"></span>
                     <img src="/assets/circles.svg" alt="Circles icon" />
                   </div>
                 </div>
 
-                <div class="row-container__sample sample-5">
-                  <div class="sample-5__icon-wrap">
+                <div class="ui-container__row row-5">
+                  <div class="row-5__icon-wrap">
                     <img src="/assets/white-stars.svg" alt="Stars icon" />
                   </div>
-                  <div class="sample-5__general-wrap general-wrap">
+                  <div class="row-5__wrap row-container">
                     <img src="/assets/avatar4.png" alt="Avatar icon" />
-                    <div class="general-wrap__circle-wrap circle-wrap">
-                      <span
-                        class="circle-wrap__instance instance--green"
-                      ></span>
+                    <div class="row-container__wrap circle-wrap">
+                      <span class="circle-wrap__instance circle--green"></span>
                     </div>
                   </div>
                 </div>
               </div>
-              <span class="tasks__next-btn">
+
+              <span class="interface-3__next-btn">
                 <img src="/assets/next-btn.svg" alt="Next button icon" />
               </span>
+
+              <img class="interface-3__arrow--right" src="/assets/left-arrow.svg" alt="Left-arrow icon">
+              <img class="interface-3__vertical" src="/assets/vertical.svg" alt="Vertical direct">
+              <img class="interface-3__arrow--left" src="/assets/right-arrow.svg" alt="Right-arrow icon">
+
+              <img class="interface-3__bind-1" src="/assets/bind.svg" alt="Bind icon">
+              <img class="interface-3__bind-2" src="/assets/bind.svg" alt="Bind icon">
             </div>
 
-            <div class="ui-1__options">
+            <div class="interface__options">
               <img src="/assets/options.svg" alt="Options icon" />
             </div>
           </div>
@@ -568,8 +581,9 @@
           quis lectus<br />
           nulla at volutpat diam ut venenatis tellus—in ornare.
         </p>
-        <div class="reviews__content content">
-          <div class="content__card card">
+
+        <div class="reviews__content survey-content">
+          <div class="survey-content__card card">
             <img class="card__avatar" src="/assets/oval1.png" alt="Avatar" />
             <img class="card__quotes" src="/assets/“.png" alt="Quote icon" />
             <p class="text text--start">
@@ -584,7 +598,8 @@
               <span class="card__role">UX Board</span>
             </div>
           </div>
-          <div class="content__card card">
+
+          <div class="survey-content__card card">
             <img class="card__avatar" src="/assets/oval.png" alt="Avatar" />
             <img class="card__quotes" src="/assets/“.png" alt="Quote icon" />
             <p class="text text--start">
@@ -599,7 +614,8 @@
               <span class="card__role">AppName</span>
             </div>
           </div>
-          <div class="content__card card">
+
+          <div class="survey-content__card card">
             <img class="card__avatar" src="/assets/oval2.png" alt="Avatar" />
             <img class="card__quotes" src="/assets/“.png" alt="Quote icon" />
             <p class="text text--start">
@@ -636,7 +652,7 @@
         <div class="contacts__general-info general-info">
           <div class="general-info__about-us">
             <img class="logo" src="/assets/logo.png" alt="Logo icon" />
-            <p class="text about-us__text">
+            <p class="text general-info__text">
               Lorem ipsum is placeholder text commonly<br />
               used in the graphic, print, and publishing<br />
               industries for previewing layouts and visual<br />
@@ -644,37 +660,35 @@
             </p>
           </div>
           <p class="text contacts__text">
-            Made by <b>Cruip</b>. All right reserved
+            Made by <b class="contacts__text--bold">Cruip</b>. All right reserved
           </p>
         </div>
 
         <div class="contacts__connection-ways connection-ways">
           <nav class="connection-ways__lists lists">
             <ul class="lists__products">
-              <li class="text contacts__text"><b>Products</b></li>
-              <li class="text contacts__text">Web Studio</li>
-              <li class="text contacts__text">DynamicBox Flex</li>
-              <li class="text contacts__text">Programming Forms</li>
+              <li class="text contacts__text"><b class="contacts__text--bold">Products</b></li>
+              <li class="text contacts__text"><a>Web Studio</a></li>
+              <li class="text contacts__text"><a>DynamicBox Flex</a></li>
+              <li class="text contacts__text"><a>Programming Forms</a></li>
             </ul>
 
             <ul class="lists__resources">
-              <li class="text contacts__text">
-                <b>Resources</b>
-              </li>
-              <li class="text contacts__text">Nostrud exercitation</li>
-              <li class="text contacts__text">Visual mockups</li>
-              <li class="text contacts__text">Nostrud exercitation</li>
-              <li class="text contacts__text">Visual mockups</li>
-              <li class="text contacts__text">Nostrud exercitation</li>
+              <li class="text contacts__text"><b class="contacts__text--bold">Resources</b></li>
+              <li class="text contacts__text"><a>Nostrud exercitation</a></li>
+              <li class="text contacts__text"><a>Visual mockups</a></li>
+              <li class="text contacts__text"><a>Nostrud exercitation</a></li>
+              <li class="text contacts__text"><a>Visual mockups</a></li>
+              <li class="text contacts__text"><a>Nostrud exercitation</a></li>
             </ul>
 
             <ul class="lists__company">
-              <li class="text contacts__text"><b>Company</b></li>
-              <li class="text contacts__text">Consectetur adipiscing</li>
-              <li class="text contacts__text">Labore et dolore</li>
-              <li class="text contacts__text">Consectetur adipiscing</li>
-              <li class="text contacts__text">Labore et dolore</li>
-              <li class="text contacts__text">Consectetur adipiscing</li>
+              <li class="text contacts__text"><b class="contacts__text--bold">Company</b></li>
+              <li class="text contacts__text"><a>Consectetur adipiscing</a></li>
+              <li class="text contacts__text"><a>Labore et dolore</a></li>
+              <li class="text contacts__text"><a>Consectetur adipiscing</a></li>
+              <li class="text contacts__text"><a>Labore et dolore</a></li>
+              <li class="text contacts__text"><a>Consectetur adipiscing</a></li>
             </ul>
           </nav>
 

@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.header,
+.general-header,
 .main,
 .footer {
   display: flex;
@@ -36,7 +36,7 @@ body {
   gap: 80px;
 }
 
-.header {
+.general-header {
   justify-content: space-between;
   padding: 24px 0;
 }
@@ -249,8 +249,8 @@ body {
 
 .description__advantages {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 64px;
   margin-top: 52px;
 }
@@ -267,12 +267,12 @@ body {
   margin-bottom: 16px;
 }
 
-.examples {
+.promo {
   padding-bottom: 80px;
   border-bottom: 1px solid #33363a;
 }
 
-.examples__button {
+.promo__button {
   cursor: pointer;
   width: 186px;
   height: 30px;
@@ -284,17 +284,16 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
-  text-align: center;
   color: #36a269;
 
   background-color: #c6f6d5;
 }
 
-.examples__button:hover {
+.promo__button:hover {
   background-color: #add8bb;
 }
 
-.examples__instance {
+.example {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -303,7 +302,7 @@ body {
   margin-top: 80px;
 }
 
-.instance__definition {
+.example__definition {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -315,7 +314,7 @@ body {
   color: #5d5dff;
 }
 
-.definition__capture {
+.definition__title {
   margin-bottom: 8px;
 }
 
@@ -329,7 +328,7 @@ body {
   margin-bottom: 8px;
 }
 
-.instance__ui {
+.example__interface {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -337,20 +336,20 @@ body {
   background-color: #25282c;
 }
 
-.instance__ui .header {
+.interface__header {
   display: flex;
   justify-content: space-between;
   padding-top: 16px;
   border-top: 1px solid #33363a;
 }
 
-.header__user {
+.ui-header__user {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.header__buttons {
+.ui-header__buttons {
   gap: 8px;
 }
 
@@ -369,6 +368,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 4px;
+
   height: 28px;
   border: none;
   border-radius: 2px;
@@ -398,7 +398,7 @@ body {
   background-color: #48bb78;
 }
 
-.ui-1__tasks {
+.interface-1__tasks {
   display: flex;
   flex-direction: column;
 }
@@ -464,13 +464,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 32px;
   height: 22px;
   border-radius: 20px;
   background-color: rgba(72, 187, 120, 0.24);
 }
 
-.number__forth {
+.number__icon {
   width: 12px;
   height: 12px;
 }
@@ -518,28 +519,28 @@ body {
   margin-left: 4px;
 }
 
-.ui-2__tasks {
+.interface-2__background {
   position: relative;
 }
 
-.tasks__rows {
+.ui-background__wrap {
   position: absolute;
   display: grid;
   grid-template-rows: repeat(7, 32px);
   width: 100%;
 }
 
-.tasks__rows > :first-child {
+.ui-background__wrap > :first-child {
   border-top: 1px solid #33363a;
 }
 
-.rows__item {
+.ui-background__item {
   border-bottom: 1px solid #33363a;
 }
 
-.tasks__shapes {
+.interface-2__shapes {
   display: grid;
-  grid-template-rows: repeat(42, 6px);
+  grid-template-rows: repeat(43, 6px);
   grid-template-columns: repeat(127, 4px);
 }
 
@@ -549,17 +550,18 @@ body {
   padding: 0 16px;
   border-radius: 2px;
   z-index: 2;
+
   background-color: #25282c;
   box-shadow: 0px 1px 4px 0px rgba(21, 23, 25, 0.24);
   border: 1px solid #33363a;
 }
 
 .shapes__oval {
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  z-index: 2;
 }
 
 .oval__circle {
@@ -601,7 +603,7 @@ body {
 
 .rectangle-1 {
   grid-row-start: 1;
-  grid-row-end: 8;
+  grid-row-end: 9;
   grid-column-start: 8;
   grid-column-end: 58;
 }
@@ -660,80 +662,86 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   margin-left: 12px;
 }
 
-.tasks__angle,
-.tasks__bind {
-  position: absolute;
+.shapes__angle {
+  z-index: 1;
 }
 
-.angle-1 {
-  top: 23px;
-  left: 10px;
-}
-
-.angle-2 {
-  top: 82px;
-  left: 246px;
-}
-
-.angle-3 {
-  top: 82px;
-  left: 386px;
-}
-
-.angle-4 {
-  top: 143px;
-  left: 168px;
-}
-
-.tasks__bind {
+.shapes__bind {
   z-index: 2;
 }
 
+.angle-1 {
+  grid-row-start: 4;
+  grid-column-start: 4;
+  margin-top: 2px;
+}
+
+.angle-2 {
+  grid-row-start: 15;
+  grid-column-start: 63;
+}
+
+.angle-3 {
+  grid-row-start: 15;
+  grid-column-start: 97;
+}
+
+.angle-4 {
+  grid-row-start: 25;
+  grid-column-start: 44;
+  margin-top: 2px;
+}
+
 .bind-1 {
-  top: 20px;
-  left: 24px;
+  grid-row-start: 4;
+  grid-column-start: 7;
 }
 
 .bind-2 {
-  top: 82px;
-  left: 96px;
+  grid-row-start: 14;
+  grid-column-start: 25;
+  margin-top: 2px;
 }
 
 .bind-3 {
-  top: 80px;
-  left: 243px;
+  grid-row-start: 14;
+  grid-column-start: 62;
+  margin-top: 2px;
 }
 
 .bind-4 {
-  top: 80px;
-  left: 277px;
+  grid-row-start: 14;
+  grid-column-start: 70;
+  margin-top: 2px;
 }
 
 .bind-5 {
-  top: 80px;
-  left: 422px;
+  grid-row-start: 14;
+  grid-column-start: 107;
+  margin-top: 2px;
 }
 
 .bind-6 {
-  top: 143px;
-  left: 384px;
+  grid-row-start: 25;
+  grid-column-start: 97;
 }
 
 .bind-7 {
-  top: 140px;
-  left: 184px;
+  grid-row-start: 25;
+  grid-column-start: 47;
 }
 
 .bind-8 {
-  top: 203px;
-  left: 250px;
+  grid-row-start: 35;
+  grid-column-start: 64;
 }
 
-.ui-3__tasks {
+.interface-3__wrap {
+  position: relative;
   display: flex;
   padding-bottom: 32px;
   margin-bottom: 9px;
@@ -741,13 +749,13 @@ body {
   border-top: none;
 }
 
-.tasks__row-container {
+.interface-3__container {
   display: flex;
   flex-direction: column;
   border-top: 1px solid #33363a;
 }
 
-.row-container__sample {
+.ui-container__row {
   display: flex;
   align-items: center;
   height: 44px;
@@ -756,9 +764,7 @@ body {
   border-left: 1px solid #33363a;
 }
 
-.sample-1__icons,
-.sample-2__icons,
-.sample-4__icons {
+.row-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -768,13 +774,8 @@ body {
   border: 1px solid #33363a;
 }
 
-.sample-1__icons {
-  width: 148px;
-  margin-left: 16px;
-}
-
-.sample-1__filling,
-.sample-4__filling {
+.row-1__filling,
+.row-4__filling {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -785,30 +786,43 @@ body {
   border: 1px solid #33363a;
 }
 
-.sample-1__filling {
+.row-1__wrap {
+  width: 148px;
+  margin-left: 16px;
+}
+
+.row-1__filling {
   width: 114px;
   margin-left: 162px;
 }
 
-.sample-2__avatars {
+.row-2__avatars {
   display: flex;
   margin-left: 66px;
   margin-right: 8px;
 }
 
-.avatars__avatar--left {
+.avatars__image--left {
   z-index: 1;
 }
 
-.avatars__avatar--right {
+.avatars__image--right {
   margin-left: -15px;
 }
 
-.sample-2__icons {
+.row-2__wrap {
   width: 159px;
 }
 
-.sample-3__general-wrap {
+.row-container__wrap {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #33363a;
+}
+
+.row-3__wrap {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -816,37 +830,32 @@ body {
   margin-left: 156px;
 }
 
-.general-wrap__circle-wrap {
-  display: flex;
-  align-items: center;
+.row-3 .circle-wrap {
   height: 24px;
   width: 62px;
-  padding: 10px;
-  margin-right: 150px;
-  border-radius: 20px;
-  border: 1px solid #33363a;
 }
 
-.sample-3__icon-wrap {
+.row-3__icon-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 24px;
   width: 40px;
+  margin-left: 140px;
   border-radius: 20px;
   border: 1px solid #33363a;
 }
 
-.sample-4__filling {
+.row-4__filling {
   margin-left: 27px;
   margin-right: 76px;
 }
 
-.sample-4__icons {
+.row-4__wrap {
   width: 144px;
 }
 
-.sample-5__icon-wrap {
+.row-5__icon-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -857,21 +866,15 @@ body {
   background-color: #5d5dff;
 }
 
-.sample-5__general-wrap {
+.row-5__wrap {
   display: flex;
   align-items: center;
   margin-left: 163px;
 }
 
-.sample-5 .general-wrap__circle-wrap {
-  display: flex;
-  align-items: center;
+.row-5 .circle-wrap {
   height: 24px;
   width: 72px;
-  padding: 10px;
-  margin-right: 150px;
-  border-radius: 20px;
-  border: 1px solid #33363a;
 }
 
 .filling__text {
@@ -880,7 +883,7 @@ body {
   line-height: 15px;
 }
 
-.icons__circle,
+.row-wrap__circle,
 .filling__circle,
 .circle-wrap__instance {
   height: 6px;
@@ -892,8 +895,7 @@ body {
   background-color: #5d5dff;
 }
 
-.circle--green,
-.instance--green {
+.circle--green {
   background-color: #48bb78;
 }
 
@@ -901,12 +903,43 @@ body {
   background-color: #f6ae55;
 }
 
-.circle--red,
-.instance--red {
+.circle--red {
   background-color: #f56565;
 }
 
-.tasks__next-btn {
+.interface-3__arrow--right,
+.interface-3__vertical,
+.interface-3__arrow--left,
+.interface-3__bind-1,
+.interface-3__bind-2 {
+  position: absolute;
+}
+
+.interface-3__arrow--left {
+  top: 80px;
+  left: 20px;
+}
+
+.interface-3__vertical {
+  top: 5px;
+  left: 50%;
+}
+
+.interface-3__arrow--right {
+  top: 65px;
+  left: 300px;
+}
+
+.interface-3__bind-1,
+.interface-3__bind-2 {
+  left: 49.5%;
+}
+
+.interface-3__bind-2 {
+  top: 216px;
+}
+
+.interface-3__next-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -914,12 +947,11 @@ body {
   border: 1px solid #33363a;
 }
 
-.tasks__next-btn > img {
+.interface-3__next-btn > img {
   cursor: pointer;
 }
 
-.ui-1__options,
-.ui-2__options {
+.interface__options {
   align-self: flex-end;
   display: flex;
   justify-content: center;
@@ -935,7 +967,7 @@ body {
   margin: 80px 0;
 }
 
-.content__card {
+.survey-content__card {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1070,22 +1102,19 @@ body {
   gap: 14px;
 }
 
-.about-us__text {
+.general-info__text {
   font-size: 16px;
-  font-weight: 400;
   line-height: 24px;
   text-align: start;
 }
 
 .contacts__text {
-  cursor: pointer;
   font-size: 14px;
-  font-weight: 400;
   line-height: 22px;
   text-align: start;
 }
 
-b {
+.contacts__text--bold {
   font-weight: 500;
   color: #d9e3ea;
 }
@@ -1110,6 +1139,18 @@ b {
   align-items: start;
   gap: 4px;
   list-style: none;
+}
+
+.lists__products li,
+.lists__resources li,
+.lists__company li {
+  cursor: pointer;
+}
+
+.lists__products a:hover,
+.lists__resources a:hover,
+.lists__company a:hover {
+  text-decoration: underline;
 }
 
 .connection-ways__messengers {
