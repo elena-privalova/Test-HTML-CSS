@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
 
 html {
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 
 * {
@@ -19,24 +19,24 @@ body {
   align-items: center;
   overflow-y: scroll;
   background-color: #151719;
-  background-image: url("/assets/shape.svg");
+  background-image: url('/assets/shape.svg');
   background-position: top right;
   background-repeat: no-repeat;
 }
 
-header,
-main,
+.header,
+.main,
 .footer {
   display: flex;
   width: 1104px;
 }
 
-main {
-  flex-wrap: wrap;
+.main {
+  flex-direction: column;
   gap: 80px;
 }
 
-header {
+.header {
   justify-content: space-between;
   padding: 24px 0;
 }
@@ -57,15 +57,18 @@ header {
   width: 96px;
   height: 40px;
   border: none;
+  border-radius: 2px;
   font-weight: 500;
   line-height: 24px;
+  text-align: center;
 }
 
 .buttons__sign-in {
   margin-right: 48px;
-  text-align: end;
-  background-color: transparent;
   color: #5d5dff;
+  text-align: end;
+  border-radius: 0;
+  background-color: transparent;
 }
 
 .buttons__sign-in:hover {
@@ -73,7 +76,6 @@ header {
 }
 
 .buttons__sign-up {
-  border-radius: 2px;
   background-color: #5d5dff;
   color: #ffffff;
 }
@@ -84,34 +86,33 @@ header {
   background-color: #4b4acf;
 }
 
-section {
+.section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-.text {
+.title,
+.text,
+.caption {
   text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4 {
+.title {
   color: #d9e3ea;
+}
+
+.text,
+.caption {
+  font-weight: 400;
+  letter-spacing: -0.25px;
+  color: #9ba9b4;
 }
 
 .text {
   font-size: 18px;
-  font-weight: 400;
   line-height: 27px;
-  letter-spacing: -0.25px;
-  color: #9ba9b4;
 }
 
 .text--start {
@@ -123,42 +124,42 @@ h4 {
   line-height: 30px;
 }
 
-h1,
-h2 {
+.title-1,
+.title-2 {
   margin-bottom: 16px;
   font-weight: 800;
   letter-spacing: -0.5px;
 }
 
-h3,
-h4 {
+.title-3,
+.title-4 {
+  margin-bottom: 8px;
   font-weight: 700;
   letter-spacing: -0.25px;
 }
 
-h1 {
+.title-1 {
   font-size: 52px;
   line-height: 62px;
 }
 
-h2 {
+.title-2 {
   font-size: 40px;
   line-height: 50px;
 }
 
-h3 {
+.title-3 {
   font-size: 32px;
   line-height: 42px;
 }
 
-h4 {
+.title-4 {
   font-size: 24px;
   line-height: 34px;
 }
 
 .intro {
   margin-top: 80px;
-
   position: relative;
 }
 
@@ -198,7 +199,7 @@ h4 {
   width: auto;
   margin-right: 125px;
   padding-bottom: 64px;
-  background-image: url("/assets/introShape.svg");
+  background-image: url('/assets/introShape.svg');
   background-repeat: no-repeat;
   background-position: bottom left;
 }
@@ -310,7 +311,7 @@ h4 {
 }
 
 .definition__lozung {
-  font-family: "Architects Daughter";
+  font-family: 'Architects Daughter';
   color: #5d5dff;
 }
 
@@ -319,7 +320,7 @@ h4 {
 }
 
 .definition__list {
-  list-style-image: url("/assets/check.svg");
+  list-style-image: url('/assets/check.svg');
   margin-top: 16px;
   margin-left: 20px;
 }
@@ -441,7 +442,7 @@ h4 {
 }
 
 .labels__checkbox:checked {
-  background-image: url("/assets/check.svg");
+  background-image: url('/assets/check.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -999,7 +1000,7 @@ h4 {
   padding: 65px 0;
 
   background-color: #5d5dff;
-  background-image: url("/assets/fill.svg");
+  background-image: url('/assets/fill.svg');
   background-repeat: no-repeat;
   background-position: top right;
 }
